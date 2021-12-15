@@ -35,7 +35,7 @@ export default ({ navigation }) => {
                 <>
                     <Text style={[styles.text, styles.bold]}>{data.name}</Text>
                     <Text style={[styles.text, styles.space]}>{data.desc}</Text>
-                    <Button title="Accept Order" color="#fff" onPress={() => {
+                    <Button title="Accept Order" onPress={() => {
                         AsyncStorage.getItem('token')
                             .then(x => {
                                 if (x) {
@@ -58,7 +58,7 @@ export default ({ navigation }) => {
                                 }
                             })
                     }} />
-                    <Button title="Close Order" color="#fff" onPress={() => navigation.navigate('Meals')} />
+                    <Button title="Close Order" onPress={() => navigation.navigate('Meals')} />
                 </>
             }
         </View>
