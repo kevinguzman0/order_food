@@ -1,4 +1,4 @@
-# OrderFood
+# FoodOrder
 
 ## Instalation
 
